@@ -3,7 +3,6 @@
     #package reshape to manipulate data
     #and dplyr to explore/transform data.
 
-setwd('/Users/ghuiber/Documents/GitHub/Data')
 #load libraries----
 library(reshape)
 library(dplyr)
