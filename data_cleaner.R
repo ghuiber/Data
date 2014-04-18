@@ -3,7 +3,7 @@
     #package reshape to manipulate data
     #and dplyr to explore/transform data.
 
-
+setwd('/Users/ghuiber/Documents/GitHub/Data')
 #load libraries----
 library(reshape)
 library(dplyr)
@@ -12,7 +12,7 @@ library(dplyr)
 dat <- read.csv("example/dirty_data.csv")
 str(dat)
 
-#First we notice wierd columns...Get rid of columns with no data... The X's columns----
+#First we notice weird columns...Get rid of columns with no data... The X's columns----
 dat <- dat[,1:16]
 str(dat)
 
