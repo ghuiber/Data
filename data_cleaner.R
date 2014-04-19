@@ -11,13 +11,14 @@ library(dplyr)
 dat <- read.csv("example/dirty_data.csv")
 str(dat)
 
-#First we notice weird columns...Get rid of columns with no data... The X's columns----
+# First we notice weird columns
+# Get rid of columns with no data... The X's columns----
 dat <- dat[,1:16]
 str(dat)
 
 #Second thing we notice is Date is a factor----
 levels(dat$Date)
-#lets make it a date
+#Let's make it a date
 dat$Date <- as.Date(dat$Date, format= "%d/%m/%Y")
 str(dat)
 #you may want to extract only the day (or month)
